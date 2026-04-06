@@ -99,7 +99,7 @@ export default function App() {
               </h1>
               
               <p className="text-lg text-slate-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
-                Share one large, bold 9x12 inch oversized postcard with 12 to 20 non-competing local businesses. We mail it to thousands of homes across Chicago and the surrounding suburbs via USPS EDDM. No mailing list needed.
+                Share one large, bold 9x12 inch oversized postcard with 12 to 20 non-competing local businesses. We mail it to thousands of homes across Chicago via USPS. Think of it like a local coupon book, but bigger, bolder, and mailed directly to mailboxes.
               </p>
               
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-10">
@@ -127,7 +127,7 @@ export default function App() {
             <div className="relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl relative z-10 border-8 border-white bg-white">
                 <img 
-                  src="/image (5).jpg" 
+                  src="/image5.jpg" 
                   alt="Mailbox with postcard" 
                   className="w-full h-[500px] object-cover"
                 />
@@ -270,13 +270,13 @@ export default function App() {
       </section>
 
       {/* Who We Serve */}
-      <section id="who-we-serve" className="py-24 bg-slate-50">
+      <section id="who-we-serve" className="py-24 bg-[#1e2235] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <p className="text-[#f35f2c] font-bold text-sm uppercase tracking-wider mb-3">Our Partners</p>
-            <h2 className="text-4xl md:text-5xl font-black text-[#1e2235] mb-6 tracking-tight">Who We Serve</h2>
-            <p className="text-lg text-slate-600">
-              Any business that relies on local Chicago area customers can benefit from our shared postcard model. Remember, only one business per category!
+            <h2 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">Who We Serve</h2>
+            <p className="text-lg text-slate-300">
+              Any business that relies on local Chicago area customers (Old Irving Park, Ravenswood, Lincoln Square and more) can benefit from our shared postcard model. Remember, only one business per category!
             </p>
           </div>
 
@@ -289,13 +289,13 @@ export default function App() {
               { icon: ShoppingBag, title: "Retail", desc: "Boutiques, Auto Shops, Pet Stores, Specialty Shops" },
               { icon: Briefcase, title: "Professional Services", desc: "Accountants, Lawyers, Insurance Agents, Tax Prep" }
             ].map((category, i) => (
-              <div key={i} className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-[#f35f2c] transition-colors flex gap-4 items-start shadow-sm hover:shadow-md">
-                <div className="bg-orange-50 p-3 rounded-xl text-[#f35f2c] flex-shrink-0">
+              <div key={i} className="bg-slate-800/50 rounded-2xl p-6 border border-slate-700 hover:border-[#f35f2c] transition-colors flex gap-4 items-start shadow-sm hover:shadow-md">
+                <div className="bg-orange-500/10 p-3 rounded-xl text-[#f35f2c] flex-shrink-0">
                   <category.icon className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-[#1e2235] mb-1">{category.title}</h3>
-                  <p className="text-sm text-slate-500 leading-relaxed">{category.desc}</p>
+                  <h3 className="font-bold text-white mb-1">{category.title}</h3>
+                  <p className="text-sm text-slate-400 leading-relaxed">{category.desc}</p>
                 </div>
               </div>
             ))}
